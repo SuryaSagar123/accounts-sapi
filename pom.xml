@@ -30,8 +30,22 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					 <cloudHubDeployment>
+					      <uri>https://anypoint.mulesoft.com</uri>
+					      <muleVersion>4.3.0</muleVersion>
+					      <username>ram5624</username>
+					      <password>@Ra0805217147</password>
+					      <applicationName>sagar-accounts-sapi-</applicationName>
+					      <environment>Sandbox</environment>
+					      <workers>1</workers>
+					      <workerType>MICRO</workerType>
+					      <properties>
+					        <http.port>8081</http.port>
+					      </properties>
+					 </cloudHubDeployment>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 
